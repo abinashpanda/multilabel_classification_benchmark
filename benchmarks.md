@@ -42,10 +42,10 @@ Comparing the results with ```scikit-learn``` implemenation
 
 * Number of features: 47,236
 
-| Model                                         | Accuracy | Train-time | Max. Memory Consumption |
-|-----------------------------------------------|----------|------------|-------------------------|
-|MultilabelModel *with* threshold/bias term     | 0.821756 | 12732.122  | 2074 MB                 |
-|MultilabelCLRModel *with* threshold/bias term  | 0.841264 | 27864.244  | 2096 MB                 |
+| Model                                         | Accuracy | Train-time |
+|-----------------------------------------------|----------|------------|
+|MultilabelModel *with* threshold/bias term     | 0.821756 | 12732.122  |
+|MultilabelCLRModel *with* threshold/bias term  | 0.841264 | 27864.244  |
 
 ###RCV1V2 (Topics; Subsets)
 
@@ -59,8 +59,8 @@ Comparing the results with ```scikit-learn``` implemenation
 
 For this data set, the models were trained using multi-processing (on 4-cores processor) with 8 threads.
 
-| Model                                         | Accuracy | Train-time | Max. Memory Consumption |
-|-----------------------------------------------|----------|------------|-------------------------|
-|MultilabelModel *with* threshold/bias term     | 0.843219 | 2250.233   | 1767 MB                 |
-|MultilabelCLRModel *with* threshold/bias term  | 0.857997 | 5170.678   | 1850 MB                 |
+| Model                                         | Accuracy | Train-time |
+|-----------------------------------------------|----------|------------|
+|MultilabelModel *with* threshold/bias term     | 0.843219 | 2250.233   |
+|MultilabelCLRModel *with* threshold/bias term  | 0.857997 | 5170.678   |
 
