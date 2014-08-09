@@ -64,3 +64,6 @@ For this data set, the models were trained using multi-processing (on 4-cores pr
 |MultilabelModel *with* threshold/bias term     | 0.843219 | 2250.233   |
 |MultilabelCLRModel *with* threshold/bias term  | 0.857997 | 5170.678   |
 
+The time taken for training with ```MultilabelCLRModel``` takes more time as compared
+to ```MultilabelModel```. The reason for this is the takes more number of iterations 
+to converge as compared to ```MultilabelModel```. 

@@ -51,4 +51,17 @@ For **memory usage** profiling, you can use ```valgrind``` along with
 $ valgrind --tool=massif ./benchmark MultilabelModel 100 10000 1000
 $ ms_print massif.*
 ```
+The memory profiles are computed for some models present in
+```memory_profiles``` directory. To view the memory usage:
+
+```
+$ cd memory_profiles
+$ ms_print massif.MultilabelModel.100.1000000.1000 
+```
+
+would give you the memory profile for ```MultilabelModel``` with
+
+* 100 classes  
+* 1000000 dimensional features
+* 1000 number of samples
 
