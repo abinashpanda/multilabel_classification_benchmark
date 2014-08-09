@@ -1,0 +1,1073 @@
+desc: (none)
+cmd: ./benchmark MultilabelModel 1000 10000 1000
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2974711014
+mem_heap_B=575461199
+mem_heap_extra_B=144811033
+mem_stacks_B=0
+heap_tree=peak
+n3: 575461199 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 560060421 0x57F56E2: shogun::sg_malloc(unsigned long) (in /usr/local/lib/libshogun.so.16.1)
+  n5: 400040000 0x568DB80: shogun::SGVector<double>::SGVector(int, bool) (in /usr/local/lib/libshogun.so.16.1)
+   n2: 160000000 0x5B5C2DD: shogun::CMultilabelModel::get_joint_feature_vector(int, shogun::CStructuredData*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x5B5CC21: shogun::CMultilabelModel::argmax(shogun::SGVector<double>, int, bool) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x5B6AC14: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+       n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+         n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 80000000 0x5B25FBA: shogun::CStructuredModel::get_joint_feature_vector(int, int) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x5B5CCA7: shogun::CMultilabelModel::argmax(shogun::SGVector<double>, int, bool) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x5B6AC14: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+       n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+        n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+         n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+          n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n1: 80000000 0x5B6AAC1: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+      n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n1: 80000000 0x5B6AC36: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+      n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n1: 80000000 0x5B6AC4E: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+      n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n0: 40000 in 10 places, all below massif's threshold (01.00%)
+  n1: 160000000 0x56FAAD6: shogun::SGVector<double>::clone_vector(double const*, int) (in /usr/local/lib/libshogun.so.16.1)
+   n2: 160000000 0x56FAB05: shogun::SGVector<double>::clone() const (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x5B6B8F5: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 80000000 0x5B6AF68: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+  n0: 20421 in 21 places, all below massif's threshold (01.00%)
+ n2: 15266424 0x57F58D5: shogun::sg_realloc(void*, unsigned long) (in /usr/local/lib/libshogun.so.16.1)
+  n1: 15265840 0x58793AA: shogun::SGSparseVector<double>::sort_features(bool) (in /usr/local/lib/libshogun.so.16.1)
+   n1: 15265840 0x40177C: generate_features(int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 15265840 0x401BBE: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+     n0: 15265840 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+  n0: 584 in 1 place, below massif's threshold (01.00%)
+ n0: 134354 in 65 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=2
+#-----------
+time=10974934816
+mem_heap_B=335461191
+mem_heap_extra_B=144801945
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=15378778827
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=20504095537
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=23863336245
+mem_heap_B=335469603
+mem_heap_extra_B=144802149
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=29880656097
+mem_heap_B=335469603
+mem_heap_extra_B=144802149
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=35671436639
+mem_heap_B=255469199
+mem_heap_extra_B=144798993
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=42130078036
+mem_heap_B=175468239
+mem_heap_extra_B=144795521
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=46209896249
+mem_heap_B=575461199
+mem_heap_extra_B=144811033
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=51479769751
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=56892179144
+mem_heap_B=575461195
+mem_heap_extra_B=144811013
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=61730494887
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=65072635817
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=70423494909
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=75103641507
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=79786561607
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=detailed
+n3: 495461195 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 480060421 0x57F56E2: shogun::sg_malloc(unsigned long) (in /usr/local/lib/libshogun.so.16.1)
+  n4: 320040000 0x568DB80: shogun::SGVector<double>::SGVector(int, bool) (in /usr/local/lib/libshogun.so.16.1)
+   n2: 160000000 0x5B5C2DD: shogun::CMultilabelModel::get_joint_feature_vector(int, shogun::CStructuredData*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x5B5CC21: shogun::CMultilabelModel::argmax(shogun::SGVector<double>, int, bool) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x5B6AC14: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+       n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+         n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 80000000 0x5B25FBA: shogun::CStructuredModel::get_joint_feature_vector(int, int) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x5B5CCA7: shogun::CMultilabelModel::argmax(shogun::SGVector<double>, int, bool) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x5B6AC14: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+       n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+        n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+         n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+          n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n1: 80000000 0x5B6AAC1: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+      n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n1: 80000000 0x5B6AC36: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+      n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n0: 40000 in 11 places, all below massif's threshold (01.00%)
+  n1: 160000000 0x56FAAD6: shogun::SGVector<double>::clone_vector(double const*, int) (in /usr/local/lib/libshogun.so.16.1)
+   n2: 160000000 0x56FAB05: shogun::SGVector<double>::clone() const (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x5B6B8F5: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 80000000 0x5B6AF68: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+  n0: 20421 in 21 places, all below massif's threshold (01.00%)
+ n2: 15266424 0x57F58D5: shogun::sg_realloc(void*, unsigned long) (in /usr/local/lib/libshogun.so.16.1)
+  n1: 15265840 0x58793AA: shogun::SGSparseVector<double>::sort_features(bool) (in /usr/local/lib/libshogun.so.16.1)
+   n1: 15265840 0x40177C: generate_features(int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 15265840 0x401BBE: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+     n0: 15265840 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+  n0: 584 in 1 place, below massif's threshold (01.00%)
+ n0: 134350 in 65 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=17
+#-----------
+time=83131740957
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=88488730865
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=95622493025
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=101197354995
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=105656838275
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=detailed
+n3: 495461195 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 480060421 0x57F56E2: shogun::sg_malloc(unsigned long) (in /usr/local/lib/libshogun.so.16.1)
+  n4: 320040000 0x568DB80: shogun::SGVector<double>::SGVector(int, bool) (in /usr/local/lib/libshogun.so.16.1)
+   n2: 160000000 0x5B5C2DD: shogun::CMultilabelModel::get_joint_feature_vector(int, shogun::CStructuredData*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x5B5CC21: shogun::CMultilabelModel::argmax(shogun::SGVector<double>, int, bool) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x5B6AC14: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+       n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+         n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 80000000 0x5B25FBA: shogun::CStructuredModel::get_joint_feature_vector(int, int) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x5B5CCA7: shogun::CMultilabelModel::argmax(shogun::SGVector<double>, int, bool) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x5B6AC14: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+       n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+        n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+         n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+          n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n1: 80000000 0x5B6AAC1: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+      n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n1: 80000000 0x5B6AC36: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+      n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n0: 40000 in 11 places, all below massif's threshold (01.00%)
+  n1: 160000000 0x56FAAD6: shogun::SGVector<double>::clone_vector(double const*, int) (in /usr/local/lib/libshogun.so.16.1)
+   n2: 160000000 0x56FAB05: shogun::SGVector<double>::clone() const (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x5B6B8F5: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 80000000 0x5B6AF68: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+  n0: 20421 in 21 places, all below massif's threshold (01.00%)
+ n2: 15266424 0x57F58D5: shogun::sg_realloc(void*, unsigned long) (in /usr/local/lib/libshogun.so.16.1)
+  n1: 15265840 0x58793AA: shogun::SGSparseVector<double>::sort_features(bool) (in /usr/local/lib/libshogun.so.16.1)
+   n1: 15265840 0x40177C: generate_features(int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 15265840 0x401BBE: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+     n0: 15265840 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+  n0: 584 in 1 place, below massif's threshold (01.00%)
+ n0: 134350 in 65 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=22
+#-----------
+time=111235850667
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=115692860975
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=121264524549
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=125721410713
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=130178113665
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=134637667129
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=139097830149
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=detailed
+n3: 495461195 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 480060421 0x57F56E2: shogun::sg_malloc(unsigned long) (in /usr/local/lib/libshogun.so.16.1)
+  n4: 320040000 0x568DB80: shogun::SGVector<double>::SGVector(int, bool) (in /usr/local/lib/libshogun.so.16.1)
+   n2: 160000000 0x5B5C2DD: shogun::CMultilabelModel::get_joint_feature_vector(int, shogun::CStructuredData*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x5B5CC21: shogun::CMultilabelModel::argmax(shogun::SGVector<double>, int, bool) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x5B6AC14: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+       n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+         n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 80000000 0x5B25FBA: shogun::CStructuredModel::get_joint_feature_vector(int, int) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x5B5CCA7: shogun::CMultilabelModel::argmax(shogun::SGVector<double>, int, bool) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x5B6AC14: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+       n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+        n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+         n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+          n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n1: 80000000 0x5B6AAC1: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+      n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n1: 80000000 0x5B6AC36: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+      n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n0: 40000 in 11 places, all below massif's threshold (01.00%)
+  n1: 160000000 0x56FAAD6: shogun::SGVector<double>::clone_vector(double const*, int) (in /usr/local/lib/libshogun.so.16.1)
+   n2: 160000000 0x56FAB05: shogun::SGVector<double>::clone() const (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x5B6B8F5: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 80000000 0x5B6AF68: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+  n0: 20421 in 21 places, all below massif's threshold (01.00%)
+ n2: 15266424 0x57F58D5: shogun::sg_realloc(void*, unsigned long) (in /usr/local/lib/libshogun.so.16.1)
+  n1: 15265840 0x58793AA: shogun::SGSparseVector<double>::sort_features(bool) (in /usr/local/lib/libshogun.so.16.1)
+   n1: 15265840 0x40177C: generate_features(int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 15265840 0x401BBE: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+     n0: 15265840 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+  n0: 584 in 1 place, below massif's threshold (01.00%)
+ n0: 134350 in 65 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=29
+#-----------
+time=143554596186
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=150909013208
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=154923082284
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=162948066070
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=166962810000
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=172980185862
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=detailed
+n3: 495461195 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 480060421 0x57F56E2: shogun::sg_malloc(unsigned long) (in /usr/local/lib/libshogun.so.16.1)
+  n4: 320040000 0x568DB80: shogun::SGVector<double>::SGVector(int, bool) (in /usr/local/lib/libshogun.so.16.1)
+   n2: 160000000 0x5B5C2DD: shogun::CMultilabelModel::get_joint_feature_vector(int, shogun::CStructuredData*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x5B5CC21: shogun::CMultilabelModel::argmax(shogun::SGVector<double>, int, bool) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x5B6AC14: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+       n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+         n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 80000000 0x5B25FBA: shogun::CStructuredModel::get_joint_feature_vector(int, int) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x5B5CCA7: shogun::CMultilabelModel::argmax(shogun::SGVector<double>, int, bool) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x5B6AC14: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+       n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+        n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+         n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+          n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n1: 80000000 0x5B6AAC1: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+      n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n1: 80000000 0x5B6AC36: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+      n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n0: 40000 in 11 places, all below massif's threshold (01.00%)
+  n1: 160000000 0x56FAAD6: shogun::SGVector<double>::clone_vector(double const*, int) (in /usr/local/lib/libshogun.so.16.1)
+   n2: 160000000 0x56FAB05: shogun::SGVector<double>::clone() const (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x5B6B8F5: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 80000000 0x5B6AF68: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+  n0: 20421 in 21 places, all below massif's threshold (01.00%)
+ n2: 15266424 0x57F58D5: shogun::sg_realloc(void*, unsigned long) (in /usr/local/lib/libshogun.so.16.1)
+  n1: 15265840 0x58793AA: shogun::SGSparseVector<double>::sort_features(bool) (in /usr/local/lib/libshogun.so.16.1)
+   n1: 15265840 0x40177C: generate_features(int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 15265840 0x401BBE: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+     n0: 15265840 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+  n0: 584 in 1 place, below massif's threshold (01.00%)
+ n0: 134350 in 65 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=35
+#-----------
+time=174993850758
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=181016195786
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=185030500412
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=193055441446
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=detailed
+n3: 495461195 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 480060421 0x57F56E2: shogun::sg_malloc(unsigned long) (in /usr/local/lib/libshogun.so.16.1)
+  n4: 320040000 0x568DB80: shogun::SGVector<double>::SGVector(int, bool) (in /usr/local/lib/libshogun.so.16.1)
+   n2: 160000000 0x5B5C2DD: shogun::CMultilabelModel::get_joint_feature_vector(int, shogun::CStructuredData*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x5B5CC21: shogun::CMultilabelModel::argmax(shogun::SGVector<double>, int, bool) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x5B6AC14: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+       n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+         n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 80000000 0x5B25FBA: shogun::CStructuredModel::get_joint_feature_vector(int, int) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x5B5CCA7: shogun::CMultilabelModel::argmax(shogun::SGVector<double>, int, bool) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x5B6AC14: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+       n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+        n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+         n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+          n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n1: 80000000 0x5B6AAC1: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+      n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n1: 80000000 0x5B6AC36: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+      n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n0: 40000 in 11 places, all below massif's threshold (01.00%)
+  n1: 160000000 0x56FAAD6: shogun::SGVector<double>::clone_vector(double const*, int) (in /usr/local/lib/libshogun.so.16.1)
+   n2: 160000000 0x56FAB05: shogun::SGVector<double>::clone() const (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x5B6B8F5: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 80000000 0x5B6AF68: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+  n0: 20421 in 21 places, all below massif's threshold (01.00%)
+ n2: 15266424 0x57F58D5: shogun::sg_realloc(void*, unsigned long) (in /usr/local/lib/libshogun.so.16.1)
+  n1: 15265840 0x58793AA: shogun::SGSparseVector<double>::sort_features(bool) (in /usr/local/lib/libshogun.so.16.1)
+   n1: 15265840 0x40177C: generate_features(int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 15265840 0x401BBE: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+     n0: 15265840 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+  n0: 584 in 1 place, below massif's threshold (01.00%)
+ n0: 134350 in 65 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=39
+#-----------
+time=197069565660
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=201080940736
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=205097426820
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=209108344402
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=213123005216
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=detailed
+n3: 495461195 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 480060421 0x57F56E2: shogun::sg_malloc(unsigned long) (in /usr/local/lib/libshogun.so.16.1)
+  n4: 320040000 0x568DB80: shogun::SGVector<double>::SGVector(int, bool) (in /usr/local/lib/libshogun.so.16.1)
+   n2: 160000000 0x5B5C2DD: shogun::CMultilabelModel::get_joint_feature_vector(int, shogun::CStructuredData*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x5B5CC21: shogun::CMultilabelModel::argmax(shogun::SGVector<double>, int, bool) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x5B6AC14: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+       n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+         n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 80000000 0x5B25FBA: shogun::CStructuredModel::get_joint_feature_vector(int, int) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x5B5CCA7: shogun::CMultilabelModel::argmax(shogun::SGVector<double>, int, bool) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x5B6AC14: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+       n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+        n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+         n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+          n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n1: 80000000 0x5B6AAC1: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+      n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n1: 80000000 0x5B6AC36: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+      n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n0: 40000 in 11 places, all below massif's threshold (01.00%)
+  n1: 160000000 0x56FAAD6: shogun::SGVector<double>::clone_vector(double const*, int) (in /usr/local/lib/libshogun.so.16.1)
+   n2: 160000000 0x56FAB05: shogun::SGVector<double>::clone() const (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x5B6B8F5: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 80000000 0x5B6AF68: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+  n0: 20421 in 21 places, all below massif's threshold (01.00%)
+ n2: 15266424 0x57F58D5: shogun::sg_realloc(void*, unsigned long) (in /usr/local/lib/libshogun.so.16.1)
+  n1: 15265840 0x58793AA: shogun::SGSparseVector<double>::sort_features(bool) (in /usr/local/lib/libshogun.so.16.1)
+   n1: 15265840 0x40177C: generate_features(int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 15265840 0x401BBE: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+     n0: 15265840 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+  n0: 584 in 1 place, below massif's threshold (01.00%)
+ n0: 134350 in 65 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=44
+#-----------
+time=217134410190
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=223151295656
+mem_heap_B=495461195
+mem_heap_extra_B=144807989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=229075812030
+mem_heap_B=575461203
+mem_heap_extra_B=144811053
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=232986690328
+mem_heap_B=575461203
+mem_heap_extra_B=144811053
+mem_stacks_B=0
+heap_tree=detailed
+n3: 575461203 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 560060421 0x57F56E2: shogun::sg_malloc(unsigned long) (in /usr/local/lib/libshogun.so.16.1)
+  n4: 320040000 0x568DB80: shogun::SGVector<double>::SGVector(int, bool) (in /usr/local/lib/libshogun.so.16.1)
+   n2: 160000000 0x5B5C2DD: shogun::CMultilabelModel::get_joint_feature_vector(int, shogun::CStructuredData*) (in /usr/local/lib/libshogun.so.16.1)
+    n2: 80000000 0x5B5CC21: shogun::CMultilabelModel::argmax(shogun::SGVector<double>, int, bool) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x5B28083: shogun::CSOSVMHelper::primal_objective(shogun::SGVector<double>, shogun::CStructuredModel*, double) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x5B6B597: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+       n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+        n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+         n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+          n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+     n0: 0 in 4 places, all below massif's threshold (01.00%)
+    n1: 80000000 0x5B25FBA: shogun::CStructuredModel::get_joint_feature_vector(int, int) (in /usr/local/lib/libshogun.so.16.1)
+     n2: 80000000 0x5B5CCA7: shogun::CMultilabelModel::argmax(shogun::SGVector<double>, int, bool) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x5B28083: shogun::CSOSVMHelper::primal_objective(shogun::SGVector<double>, shogun::CStructuredModel*, double) (in /usr/local/lib/libshogun.so.16.1)
+       n1: 80000000 0x5B6B597: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+        n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+         n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+          n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+           n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+      n0: 0 in 4 places, all below massif's threshold (01.00%)
+   n1: 80000000 0x5B6AAC1: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+      n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n1: 80000000 0x5B6AC36: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+      n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n0: 40000 in 11 places, all below massif's threshold (01.00%)
+  n1: 240000000 0x56FAAD6: shogun::SGVector<double>::clone_vector(double const*, int) (in /usr/local/lib/libshogun.so.16.1)
+   n3: 240000000 0x56FAB05: shogun::SGVector<double>::clone() const (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x5B6B8F5: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 80000000 0x5B6AF68: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 80000000 0x5B6B52A: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+  n0: 20421 in 21 places, all below massif's threshold (01.00%)
+ n2: 15266424 0x57F58D5: shogun::sg_realloc(void*, unsigned long) (in /usr/local/lib/libshogun.so.16.1)
+  n1: 15265840 0x58793AA: shogun::SGSparseVector<double>::sort_features(bool) (in /usr/local/lib/libshogun.so.16.1)
+   n1: 15265840 0x40177C: generate_features(int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 15265840 0x401BBE: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+     n0: 15265840 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+  n0: 584 in 1 place, below massif's threshold (01.00%)
+ n0: 134358 in 65 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=48
+#-----------
+time=240807519382
+mem_heap_B=575461203
+mem_heap_extra_B=144811053
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=246673498178
+mem_heap_B=575461203
+mem_heap_extra_B=144811053
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=248690158242
+mem_heap_B=415468251
+mem_heap_extra_B=144804629
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=250705441929
+mem_heap_B=575469615
+mem_heap_extra_B=144811257
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=252750423876
+mem_heap_B=575461203
+mem_heap_extra_B=144811053
+mem_stacks_B=0
+heap_tree=detailed
+n3: 575461203 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 560060421 0x57F56E2: shogun::sg_malloc(unsigned long) (in /usr/local/lib/libshogun.so.16.1)
+  n4: 320040000 0x568DB80: shogun::SGVector<double>::SGVector(int, bool) (in /usr/local/lib/libshogun.so.16.1)
+   n2: 160000000 0x5B5C2DD: shogun::CMultilabelModel::get_joint_feature_vector(int, shogun::CStructuredData*) (in /usr/local/lib/libshogun.so.16.1)
+    n2: 80000000 0x5B5CC21: shogun::CMultilabelModel::argmax(shogun::SGVector<double>, int, bool) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x5B28083: shogun::CSOSVMHelper::primal_objective(shogun::SGVector<double>, shogun::CStructuredModel*, double) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x5B6B597: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+       n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+        n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+         n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+          n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+     n0: 0 in 4 places, all below massif's threshold (01.00%)
+    n1: 80000000 0x5B25FBA: shogun::CStructuredModel::get_joint_feature_vector(int, int) (in /usr/local/lib/libshogun.so.16.1)
+     n2: 80000000 0x5B5CCA7: shogun::CMultilabelModel::argmax(shogun::SGVector<double>, int, bool) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x5B28083: shogun::CSOSVMHelper::primal_objective(shogun::SGVector<double>, shogun::CStructuredModel*, double) (in /usr/local/lib/libshogun.so.16.1)
+       n1: 80000000 0x5B6B597: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+        n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+         n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+          n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+           n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+      n0: 0 in 4 places, all below massif's threshold (01.00%)
+   n1: 80000000 0x5B6AAC1: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+      n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n1: 80000000 0x5B6AC36: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+      n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n0: 40000 in 11 places, all below massif's threshold (01.00%)
+  n1: 240000000 0x56FAAD6: shogun::SGVector<double>::clone_vector(double const*, int) (in /usr/local/lib/libshogun.so.16.1)
+   n3: 240000000 0x56FAB05: shogun::SGVector<double>::clone() const (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x5B6B8F5: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 80000000 0x5B6AF68: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 80000000 0x5B6B52A: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+  n0: 20421 in 21 places, all below massif's threshold (01.00%)
+ n2: 15266424 0x57F58D5: shogun::sg_realloc(void*, unsigned long) (in /usr/local/lib/libshogun.so.16.1)
+  n1: 15265840 0x58793AA: shogun::SGSparseVector<double>::sort_features(bool) (in /usr/local/lib/libshogun.so.16.1)
+   n1: 15265840 0x40177C: generate_features(int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 15265840 0x401BBE: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+     n0: 15265840 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+  n0: 584 in 1 place, below massif's threshold (01.00%)
+ n0: 134358 in 65 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=53
+#-----------
+time=254767788834
+mem_heap_B=415468251
+mem_heap_extra_B=144804629
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=256783522491
+mem_heap_B=575469615
+mem_heap_extra_B=144811257
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=258828500256
+mem_heap_B=575461203
+mem_heap_extra_B=144811053
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=260846343646
+mem_heap_B=415468251
+mem_heap_extra_B=144804629
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=262861489922
+mem_heap_B=575469615
+mem_heap_extra_B=144811257
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=264905337608
+mem_heap_B=575461203
+mem_heap_extra_B=144811053
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=266922622482
+mem_heap_B=415468251
+mem_heap_extra_B=144804629
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=268937938791
+mem_heap_B=575469615
+mem_heap_extra_B=144811257
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=270982229086
+mem_heap_B=575461203
+mem_heap_extra_B=144811053
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=273000115384
+mem_heap_B=415468251
+mem_heap_extra_B=144804629
+mem_stacks_B=0
+heap_tree=detailed
+n3: 415468251 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 400068341 0x57F56E2: shogun::sg_malloc(unsigned long) (in /usr/local/lib/libshogun.so.16.1)
+  n1: 240000000 0x56FAAD6: shogun::SGVector<double>::clone_vector(double const*, int) (in /usr/local/lib/libshogun.so.16.1)
+   n3: 240000000 0x56FAB05: shogun::SGVector<double>::clone() const (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x5B6B8F5: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 80000000 0x5B6AF68: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 80000000 0x5B6B52A: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+      n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+        n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+  n3: 160048000 0x568DB80: shogun::SGVector<double>::SGVector(int, bool) (in /usr/local/lib/libshogun.so.16.1)
+   n1: 80000000 0x5B6AAC1: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+      n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n1: 80000000 0x5B6AC36: shogun::CStochasticSOSVM::train_machine(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+    n1: 80000000 0x59A6A3F: shogun::CMachine::train(shogun::CFeatures*) (in /usr/local/lib/libshogun.so.16.1)
+     n1: 80000000 0x401A88: test_model(shogun::CStructuredModel*, shogun::CStructuredLabels*) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+      n1: 80000000 0x401C1F: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+       n0: 80000000 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+   n0: 48000 in 12 places, all below massif's threshold (01.00%)
+  n0: 20341 in 21 places, all below massif's threshold (01.00%)
+ n2: 15266424 0x57F58D5: shogun::sg_realloc(void*, unsigned long) (in /usr/local/lib/libshogun.so.16.1)
+  n1: 15265840 0x58793AA: shogun::SGSparseVector<double>::sort_features(bool) (in /usr/local/lib/libshogun.so.16.1)
+   n1: 15265840 0x40177C: generate_features(int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+    n1: 15265840 0x401BBE: test_multilabel_model(int, int, int) (in /home/abinash/multilabel_classification_benchmark/benchmark)
+     n0: 15265840 0x402140: main (in /home/abinash/multilabel_classification_benchmark/benchmark)
+  n0: 584 in 1 place, below massif's threshold (01.00%)
+ n0: 133486 in 65 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=63
+#-----------
+time=275016102538
+mem_heap_B=575469615
+mem_heap_extra_B=144811257
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=277060981408
+mem_heap_B=575461203
+mem_heap_extra_B=144811053
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=279076387283
+mem_heap_B=415468251
+mem_heap_extra_B=144804629
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=281091991434
+mem_heap_B=415468251
+mem_heap_extra_B=144804629
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=283106942842
+mem_heap_B=495469211
+mem_heap_extra_B=144808101
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=285126219904
+mem_heap_B=415468251
+mem_heap_extra_B=144804629
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=287143360523
+mem_heap_B=495469211
+mem_heap_extra_B=144808101
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=289162663423
+mem_heap_B=415468251
+mem_heap_extra_B=144804629
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=291178691549
+mem_heap_B=495469211
+mem_heap_extra_B=144808101
+mem_stacks_B=0
+heap_tree=empty
